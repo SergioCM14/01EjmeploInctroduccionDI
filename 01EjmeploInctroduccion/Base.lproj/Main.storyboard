@@ -16,14 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 veces" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vR-bd-ucV">
-                                <rect key="frame" x="20" y="145" width="374" height="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kf7-bd-pAL">
+                                <rect key="frame" x="20" y="493" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ita-Jv-iDU">
+                                <rect key="frame" x="20" y="403" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssu-Nt-dIN">
+                                <rect key="frame" x="20" y="638" width="374" height="30"/>
+                                <state key="normal" title="Registrar Usuario"/>
+                                <connections>
+                                    <action selector="RegistrarUsuario:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Izk-qD-GVJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0 veces" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vR-bd-ucV">
+                                <rect key="frame" x="20" y="121" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54x-RR-vcV">
-                                <rect key="frame" x="20" y="289" width="374" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54x-RR-vcV">
+                                <rect key="frame" x="20" y="265" width="374" height="30"/>
                                 <state key="normal" title="PULSA AQUÍ"/>
                                 <connections>
                                     <action selector="cuentaClicks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUU-9i-u2F"/>
@@ -33,16 +50,27 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Ssu-Nt-dIN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Mz-n9-5o9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3vR-bd-ucV" secondAttribute="trailing" constant="20" id="GFN-V2-Dfh"/>
                             <constraint firstItem="54x-RR-vcV" firstAttribute="top" secondItem="3vR-bd-ucV" secondAttribute="bottom" constant="123" id="JHW-AG-Hfm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ita-Jv-iDU" secondAttribute="trailing" constant="20" id="OKO-Xf-lTH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ssu-Nt-dIN" secondAttribute="bottom" constant="194" id="RL1-OM-hOK"/>
+                            <constraint firstItem="kf7-bd-pAL" firstAttribute="top" secondItem="Ita-Jv-iDU" secondAttribute="bottom" constant="56" id="U1P-dr-iLy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="54x-RR-vcV" secondAttribute="trailing" constant="20" id="YKb-oN-J1L"/>
                             <constraint firstItem="54x-RR-vcV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d30-yn-ecF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kf7-bd-pAL" secondAttribute="trailing" constant="20" id="gqi-wm-i4z"/>
+                            <constraint firstItem="Ssu-Nt-dIN" firstAttribute="top" secondItem="kf7-bd-pAL" secondAttribute="bottom" constant="111" id="j1J-uS-jU3"/>
+                            <constraint firstItem="Ita-Jv-iDU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jH9-5e-BhF"/>
+                            <constraint firstItem="kf7-bd-pAL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jO4-PT-eu6"/>
                             <constraint firstItem="3vR-bd-ucV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kb5-jp-ANh"/>
                             <constraint firstItem="3vR-bd-ucV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="tEe-sK-oDo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ssu-Nt-dIN" secondAttribute="trailing" constant="20" id="xfo-JT-Bm5"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="lbResultado" destination="3vR-bd-ucV" id="idz-du-B9H"/>
+                        <outlet property="txtEmail" destination="Ita-Jv-iDU" id="bSh-hZ-AwZ"/>
+                        <outlet property="txtPassword" destination="kf7-bd-pAL" id="cWW-hv-apX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

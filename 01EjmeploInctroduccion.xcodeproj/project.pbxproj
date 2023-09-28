@@ -15,6 +15,7 @@
 		8B59BFD72AC59D5C004BB0B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B59BFD52AC59D5C004BB0B7 /* LaunchScreen.storyboard */; };
 		8B59BFE22AC59D5C004BB0B7 /* _1EjmeploInctroduccionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B59BFE12AC59D5C004BB0B7 /* _1EjmeploInctroduccionTests.swift */; };
 		8B59BFED2AC59D5C004BB0B7 /* _1EjmeploInctroduccionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B59BFEC2AC59D5C004BB0B7 /* _1EjmeploInctroduccionUITests.swift */; };
+		8B59BFFF2AC5A53F004BB0B7 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B59BFFE2AC5A53F004BB0B7 /* Usuario.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8B59BFE82AC59D5C004BB0B7 /* 01EjmeploInctroduccionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 01EjmeploInctroduccionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B59BFEC2AC59D5C004BB0B7 /* _1EjmeploInctroduccionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1EjmeploInctroduccionUITests.swift; sourceTree = "<group>"; };
 		8B59BFEE2AC59D5C004BB0B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B59BFFE2AC5A53F004BB0B7 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		8B59BFC92AC59D5B004BB0B7 /* 01EjmeploInctroduccion */ = {
 			isa = PBXGroup;
 			children = (
+				8B59BFFD2AC5A503004BB0B7 /* modelos */,
 				8B59BFCA2AC59D5B004BB0B7 /* AppDelegate.swift */,
 				8B59BFCC2AC59D5B004BB0B7 /* SceneDelegate.swift */,
 				8B59BFCE2AC59D5B004BB0B7 /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				8B59BFEE2AC59D5C004BB0B7 /* Info.plist */,
 			);
 			path = 01EjmeploInctroduccionUITests;
+			sourceTree = "<group>";
+		};
+		8B59BFFD2AC5A503004BB0B7 /* modelos */ = {
+			isa = PBXGroup;
+			children = (
+				8B59BFFE2AC5A53F004BB0B7 /* Usuario.swift */,
+			);
+			name = modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B59BFFF2AC5A53F004BB0B7 /* Usuario.swift in Sources */,
 				8B59BFCF2AC59D5B004BB0B7 /* ViewController.swift in Sources */,
 				8B59BFCB2AC59D5B004BB0B7 /* AppDelegate.swift in Sources */,
 				8B59BFCD2AC59D5B004BB0B7 /* SceneDelegate.swift in Sources */,
